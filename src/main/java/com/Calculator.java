@@ -29,6 +29,7 @@ public class Calculator {
 	public void print(int a, int b) {
 		System.out.println(a);
 		System.out.println(b);
+		System.out.println("Values are printed");
 	}
 
 }
