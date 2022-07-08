@@ -27,7 +27,7 @@ import com.ICalculator;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @DisplayName("Calculator Operations")
-class CalculatorTest {
+public class CalculatorTest {
 
 	static Calculator c1;
 	boolean flag = true;
@@ -72,7 +72,7 @@ class CalculatorTest {
 	@Test
 	@DisplayName("Testing for Addition Operation")
 	@Tag("Math")
-	void testAdd(){
+	public void testAdd(){
 
 	//Calculator c1 = new Calculator();
 //	int actual = c1.add(10, 20);
@@ -94,7 +94,7 @@ class CalculatorTest {
 	@Test
 	@DisplayName("Testing for Multiplication Operation")
 	@Tag("Math")
-	void testMul(){
+	public void testMul(){
 		//Calculator c1 = new Calculator();
 		
 		//test is executed but not the logic inside the method
