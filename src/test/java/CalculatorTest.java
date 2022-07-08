@@ -75,20 +75,20 @@ public class CalculatorTest {
 	public void testAdd(){
 
 	//Calculator c1 = new Calculator();
-//	int actual = c1.add(10, 20);
-//	int expected = 30;
-//	assertEquals(expected, actual);
-//	System.out.println("testAdd()");
+	int actual = c1.add(10, 20);
+	int expected = 30;
+	assertEquals(expected, actual);
+	System.out.println("testAdd()");
 	
-	assertAll(
-				
-	()->assertEquals(30, c1.add(10, 20)),
-	()->assertEquals(50, c1.add(30, 20)),
-	()->assertEquals(60, c1.add(40, 20)),
-	()->assertEquals(110, c1.add(20, 90)),
-	()->assertEquals(10, c1.add(-10, 20)),
-	()->assertEquals(-30, c1.add(-10, -20))
-				);
+//	assertAll(
+//				
+//	()->assertEquals(30, c1.add(10, 20)),
+//	()->assertEquals(50, c1.add(30, 20)),
+//	()->assertEquals(60, c1.add(40, 20)),
+//	()->assertEquals(110, c1.add(20, 90)),
+//	()->assertEquals(10, c1.add(-10, 20)),
+//	()->assertEquals(-30, c1.add(-10, -20))
+//				);
 	}
 	
 	@Test
@@ -98,7 +98,7 @@ public class CalculatorTest {
 		//Calculator c1 = new Calculator();
 		
 		//test is executed but not the logic inside the method
-		assumeTrue(flag);
+		//assumeTrue(flag);
 		int actual = c1.mul(10, 20);
 		int expected = 200;
 		assertEquals(expected, actual);
