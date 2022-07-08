@@ -171,13 +171,13 @@ public class CalculatorTest {
 		verify(c2, times(1)).display(10, 20);
 	}
 	
-	@Test
-	void testDisplayArgs( ) {
-		calculator = mock(ICalculator.class);
-		doNothing().when(calculator).displayArgs(10,20);
-		calculator.displayArgs(10, 20);
-		verify(calculator, times(1)).displayArgs(10, 20);
-	}
+//	@Test
+//	void testDisplayArgs( ) {
+//		calculator = mock(ICalculator.class);
+//		doNothing().when(calculator).displayArgs(10,20);
+//		calculator.displayArgs(10, 20);
+//		verify(calculator, times(1)).displayArgs(10, 20);
+//	}
 	
 	
 
