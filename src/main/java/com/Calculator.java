@@ -25,5 +25,10 @@ public class Calculator {
 	public void addVal(int a, int b) {
 		System.out.println(a+b);
 	}
+	
+	public void print(int a, int b) {
+		System.out.println(a);
+		System.out.println(b);
+	}
 
 }
