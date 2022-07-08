@@ -30,7 +30,7 @@ import com.ICalculator;
 class CalculatorTest {
 
 	static Calculator c1;
-	boolean flag = false;
+	boolean flag = true;
 	private ICalculator calculator;
 	
 	//by default one object/instance is created for each test case
@@ -105,79 +105,79 @@ class CalculatorTest {
 		System.out.println("testMul()");
 	}
 	
-	@Test
-	//@Disabled
-	@Tag("Math")
-	void testSub() {
-		//Calculator c1 = new Calculator();
-		assertEquals(40, c1.sub(50,10));
-		System.out.println("testSub1()");
-		assertEquals(20, c1.sub(90,70));
-		System.out.println("testSub2()");
-		assumeTrue(flag); // all the code below this will not execute if assumption is wrong
-		assertEquals(10, c1.sub(30,20));
-		System.out.println("testSub3()");
-		
-	}
-	
-	@Test
-	@Tag("Demo")
-	void testDemo() {
-		System.out.println("Dummy Test Case");
-		System.out.println("demo()");
-	}
-	
-	@Test
-	@Tag("Math")
-	void testDiv() {
-		//Calculator c1 = new Calculator();
-		assertThrows(ArithmeticException.class, ()->c1.div(5, 0));
-		System.out.println("testDiv()");
-	}
-	
-	@Test
-	@EnabledOnOs(OS.WINDOWS)
-	@Tag("OS")
-	void testWindows() {
-		System.out.println("For Windows OS only");
-	}
-	
-	@Test
-	@EnabledOnOs(OS.LINUX)
-	@Tag("OS")
-	void testLinux() {
-		System.out.println("For Linux OS only");
-	}
-	
-	@Test
-	@EnabledOnJre(JRE.JAVA_8)
-	@Tags(value = {@Tag("Demo"), @Tag("Java")})
-	void testJava() {
-		System.out.println("For Java Only");
-	}
-	
-	@Test
-	@EnabledForJreRange(min= JRE.JAVA_8, max=JRE.JAVA_15)
-	@Tag("Demo")
-	void testMethodJava() {
-		System.out.println("For Java Only");
-	}
-	
-	@Test
-	void testDisplay( ) {
-		Calculator c2 = mock(Calculator.class);
-		doNothing().when(c2).display(10,20);
-		c2.display(10, 20);
-		verify(c2, times(1)).display(10, 20);
-	}
-	
-	@Test
-	void testDisplayArgs( ) {
-		calculator = mock(ICalculator.class);
-		doNothing().when(calculator).displayArgs(10,20);
-		calculator.displayArgs(10, 20);
-		verify(calculator, times(1)).displayArgs(10, 20);
-	}
+//	@Test
+//	//@Disabled
+//	@Tag("Math")
+//	void testSub() {
+//		//Calculator c1 = new Calculator();
+//		assertEquals(40, c1.sub(50,10));
+//		System.out.println("testSub1()");
+//		assertEquals(20, c1.sub(90,70));
+//		System.out.println("testSub2()");
+//		assumeTrue(flag); // all the code below this will not execute if assumption is wrong
+//		assertEquals(10, c1.sub(30,20));
+//		System.out.println("testSub3()");
+//		
+//	}
+//	
+//	@Test
+//	@Tag("Demo")
+//	void testDemo() {
+//		System.out.println("Dummy Test Case");
+//		System.out.println("demo()");
+//	}
+//	
+//	@Test
+//	@Tag("Math")
+//	void testDiv() {
+//		//Calculator c1 = new Calculator();
+//		assertThrows(ArithmeticException.class, ()->c1.div(5, 0));
+//		System.out.println("testDiv()");
+//	}
+//	
+//	@Test
+//	@EnabledOnOs(OS.WINDOWS)
+//	@Tag("OS")
+//	void testWindows() {
+//		System.out.println("For Windows OS only");
+//	}
+//	
+//	@Test
+//	@EnabledOnOs(OS.LINUX)
+//	@Tag("OS")
+//	void testLinux() {
+//		System.out.println("For Linux OS only");
+//	}
+//	
+//	@Test
+//	@EnabledOnJre(JRE.JAVA_8)
+//	@Tags(value = {@Tag("Demo"), @Tag("Java")})
+//	void testJava() {
+//		System.out.println("For Java Only");
+//	}
+//	
+//	@Test
+//	@EnabledForJreRange(min= JRE.JAVA_8, max=JRE.JAVA_15)
+//	@Tag("Demo")
+//	void testMethodJava() {
+//		System.out.println("For Java Only");
+//	}
+//	
+//	@Test
+//	void testDisplay( ) {
+//		Calculator c2 = mock(Calculator.class);
+//		doNothing().when(c2).display(10,20);
+//		c2.display(10, 20);
+//		verify(c2, times(1)).display(10, 20);
+//	}
+//	
+//	@Test
+//	void testDisplayArgs( ) {
+//		calculator = mock(ICalculator.class);
+//		doNothing().when(calculator).displayArgs(10,20);
+//		calculator.displayArgs(10, 20);
+//		verify(calculator, times(1)).displayArgs(10, 20);
+//	}
 	
 	
 
