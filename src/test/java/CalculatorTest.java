@@ -74,8 +74,8 @@ public class CalculatorTest {
 	@Tag("Math")
 	public void testAdd(){
 
-	//Calculator c1 = new Calculator();
-	int actual = c1.add(10, 20);
+	Calculator c2 = new Calculator();
+	int actual = c2.add(10, 20);
 	int expected = 30;
 	assertEquals(expected, actual);
 	System.out.println("testAdd()");
@@ -95,11 +95,11 @@ public class CalculatorTest {
 	@DisplayName("Testing for Multiplication Operation")
 	@Tag("Math")
 	public void testMul(){
-		//Calculator c1 = new Calculator();
+		Calculator c2 = new Calculator();
 		
 		//test is executed but not the logic inside the method
 		//assumeTrue(flag);
-		int actual = c1.mul(10, 20);
+		int actual = c2.mul(10, 20);
 		int expected = 200;
 		assertEquals(expected, actual);
 		System.out.println("testMul()");
